@@ -1,0 +1,288 @@
+/* ESTILO GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3f9;
+    color: #34445a;
+    line-height: 1.7;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #24476b;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 34px;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #dce9f5;
+    margin: 8px 0 22px;
+}
+
+/* MENU DE NAVEGACION */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    background-color: #365e85;
+    padding: 9px 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #dce9f5;
+    color: #24476b;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    width: 90%;
+    max-width: 1050px;
+    margin: 30px auto;
+}
+
+/* SECCIONES */
+section {
+    background-color: white;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 9px;
+    box-shadow: 0 2px 8px rgba(30, 55, 80, 0.08);
+    scroll-margin-top: 15px;
+}
+
+h2 {
+    color: #24476b;
+    font-size: 25px;
+    border-bottom: 2px solid #9bbbd8;
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+}
+
+h3 {
+    color: #426b91;
+    margin: 18px 0 10px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+/* LISTAS */
+ul, ol {
+    padding-left: 28px;
+    margin-bottom: 15px;
+}
+
+li {
+    padding: 3px 0;
+}
+
+/* IMAGENES */
+img {
+    display: block;
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 7px;
+    object-fit: cover;
+}
+
+/* PORTADA */
+.portada {
+    text-align: center;
+    padding: 35px;
+}
+
+.portada h2 {
+    font-size: 29px;
+}
+
+.portada img {
+    max-width: 600px;
+}
+
+/* ENLACES */
+section a {
+    color: #2875ad;
+    font-weight: bold;
+}
+
+section a:hover {
+    color: #24476b;
+}
+
+/* BOTON DE INICIO */
+.boton {
+    display: inline-block;
+    background-color: #426b91;
+    color: white;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.boton:hover {
+    background-color: #24476b;
+}
+
+/* TABLAS */
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+    margin: 18px 0;
+}
+
+table {
+    width: 100%;
+    min-width: 550px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #cbd8e5;
+    padding: 11px;
+    text-align: center;
+}
+
+th {
+    background-color: #365e85;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f5fa;
+}
+
+/* VIDEO */
+video {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* FORMULARIO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #365e85;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #c2d1df;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #9bbbd8;
+}
+
+/* BOTONES */
+button {
+    background-color: #426b91;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+button:hover {
+    background-color: #24476b;
+}
+
+/* MENSAJE DEL FORMULARIO */
+#respuesta {
+    color: #26734d;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: #24476b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer a {
+    color: #dce9f5;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* DISEÑO PARA CELULARES Y TABLETAS */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .portada h2 {
+        font-size: 24px;
+    }
+}
